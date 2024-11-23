@@ -12,6 +12,7 @@ public class MarmitasApplication {
 	public static void main(String[] args) {
 
 		SpringApplication.run(MarmitasApplication.class, args);
+
 	}
 
 }

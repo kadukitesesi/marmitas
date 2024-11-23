@@ -21,7 +21,7 @@ public class ProdutoModel {
     private Long id;
     private String nome;
     private BigDecimal preco;
-    @ManyToMany(mappedBy = "itens")
+    @ManyToMany(mappedBy = "produtos")
     private List<PedidoModel> pedidos;
 
     public ProdutoModel(String nome, BigDecimal preco) {
