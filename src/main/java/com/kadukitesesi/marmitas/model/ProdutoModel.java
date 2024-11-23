@@ -24,4 +24,9 @@ public class ProdutoModel {
     @ManyToMany(mappedBy = "itens")
     private List<PedidoModel> pedidos;
 
+    public ProdutoModel(String nome, BigDecimal preco) {
+
+    this.nome = nome;
+    this.preco = preco;
+    }
 }

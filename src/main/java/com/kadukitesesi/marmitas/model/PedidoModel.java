@@ -38,4 +38,13 @@ public class PedidoModel {
     private FormaDePagamento formaDePagamento;
     private StatusPedido statusPedido;
 
+    public BigDecimal calcularPrecoTotal() {
+        precoTotal = produtos.stream()
+                .map(ProdutoModel::getPreco)
+                .reduce(BigDecimal.ZERO, BigDecimal::add)
+                .multiply(new BigDecimal(quantidade));
+        return precoTotal;
+
+    }
+
 }

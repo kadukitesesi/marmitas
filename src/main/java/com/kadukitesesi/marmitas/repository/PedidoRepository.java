@@ -1,10 +1,12 @@
 package com.kadukitesesi.marmitas.repository;
 
-import com.kadukitesesi.marmitas.model.ProdutoModel;
+import com.kadukitesesi.marmitas.model.PedidoModel;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+
 @Repository
-public interface ProdutoRepository extends JpaRepository<ProdutoModel, Long> {
-    void deleteByNome(String nome);
+public interface PedidoRepository extends JpaRepository<PedidoModel,Long> {
+
 }

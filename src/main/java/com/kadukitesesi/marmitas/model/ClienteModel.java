@@ -25,4 +25,11 @@ public class ClienteModel {
     private Date aniversario;
     @OneToMany(mappedBy = "cliente")
     private List<PedidoModel> pedidos;
+
+    public ClienteModel(String telefone, String nome, String endereco, Date aniversario) {
+        this.telefone = telefone;
+        this.nome = nome;
+        this.endereco = endereco;
+        this.aniversario = aniversario;
+    }
 }
