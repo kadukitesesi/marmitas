@@ -27,8 +27,9 @@ public class ClienteService {
         return clienteRepository.save(cliente);
     }
 
-    public void excluirCliente(String nome) {
+    public Void excluirCliente(String nome) {
         clienteRepository.deleteByNome(nome);
+        return null;
     }
 
 
