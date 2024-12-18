@@ -24,4 +24,8 @@ public class ProdutoService {
     public List<ProdutoModel> obterProdutos() {
         return produtoRepository.findAll();
     }
+
+    public ProdutoModel obterProduto(Long id) {
+        return produtoRepository.findById(id).get();
+    }
 }
